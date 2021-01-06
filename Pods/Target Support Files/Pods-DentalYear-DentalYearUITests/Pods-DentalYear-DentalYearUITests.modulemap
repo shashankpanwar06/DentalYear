@@ -1,0 +1,6 @@
+framework module Pods_DentalYear_DentalYearUITests {
+  umbrella header "Pods-DentalYear-DentalYearUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
