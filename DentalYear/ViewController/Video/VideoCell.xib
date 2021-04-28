@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -50,23 +51,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryp-K9-R3H">
-                                <rect key="frame" x="0.0" y="3" width="40" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="ILg-9h-iQN"/>
-                                    <constraint firstAttribute="height" constant="40" id="J7x-Iz-g7x"/>
+                                    <constraint firstAttribute="width" constant="50" id="ILg-9h-iQN"/>
+                                    <constraint firstAttribute="height" constant="50" id="J7x-Iz-g7x"/>
                                 </constraints>
+                                <inset key="imageEdgeInsets" minX="-5" minY="-5" maxX="-5" maxY="-5"/>
                                 <state key="normal" image="icDownlaod"/>
                                 <connections>
                                     <action selector="onBtnDownlaod:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vu9-aL-40R"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="moQ-b8-GaT" firstAttribute="top" secondItem="Af6-wu-I6t" secondAttribute="top" id="3Cv-je-o5Q"/>
                             <constraint firstAttribute="bottom" secondItem="mUE-kL-UhU" secondAttribute="bottom" constant="-9" id="AMc-Ne-GMh"/>
                             <constraint firstAttribute="bottom" secondItem="xFn-r4-Ez2" secondAttribute="bottom" constant="10" id="KEG-in-8gL"/>
-                            <constraint firstItem="ryp-K9-R3H" firstAttribute="top" secondItem="Af6-wu-I6t" secondAttribute="top" constant="3" id="L9n-i6-Apv"/>
+                            <constraint firstItem="ryp-K9-R3H" firstAttribute="top" secondItem="Af6-wu-I6t" secondAttribute="top" id="L9n-i6-Apv"/>
                             <constraint firstAttribute="bottom" secondItem="moQ-b8-GaT" secondAttribute="bottom" id="MGJ-Ab-RFl"/>
                             <constraint firstItem="ryp-K9-R3H" firstAttribute="leading" secondItem="Af6-wu-I6t" secondAttribute="leading" id="R0p-H2-O82"/>
                             <constraint firstAttribute="trailing" secondItem="qOx-DT-wZO" secondAttribute="trailing" constant="8" id="T88-Su-EhD"/>
@@ -81,13 +83,13 @@
                     </view>
                 </subviews>
             </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Af6-wu-I6t" secondAttribute="trailing" constant="8" id="EhP-Pf-C0U"/>
                 <constraint firstItem="Af6-wu-I6t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="JUg-Pn-NwG"/>
                 <constraint firstAttribute="bottom" secondItem="Af6-wu-I6t" secondAttribute="bottom" constant="9" id="fDj-d9-9Kj"/>
                 <constraint firstItem="Af6-wu-I6t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pWN-B4-c3M"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="152" height="211"/>
             <connections>
                 <outlet property="btnDownLoad" destination="ryp-K9-R3H" id="cjC-gg-PBA"/>
@@ -103,5 +105,8 @@
     <resources>
         <image name="icBotmVideoCell" width="169" height="97.5"/>
         <image name="icDownlaod" width="67" height="67"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

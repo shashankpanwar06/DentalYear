@@ -119,7 +119,12 @@ class HomeViewController: UIViewController {
         guard let  aSettings:SettingsViewController =  self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController else { return }
     
         self.navigationController?.pushViewController(aSettings, animated: true)
-        
+    }
+    
+    @IBAction func editBtnPressed(_ sender: UIBarButtonItem) {
+        guard let  aSettings:NotesViewController =  self.storyboard?.instantiateViewController(withIdentifier: "NotesViewController") as? NotesViewController else { return }
+    
+        self.navigationController?.pushViewController(aSettings, animated: true)
     }
     
     func MakeApiRequestFor(date:String)  {
@@ -158,6 +163,7 @@ class HomeViewController: UIViewController {
     func getDatafor(country:kCountry)  {
         dataObject = dataArray?.getDataFor(country: country)
     }
+    
     
     func cellSelectedat(index:IndexPath)  {
         if selectedCell != index.row {
@@ -243,15 +249,5 @@ class HomeViewController: UIViewController {
     func addOfMonthSeekTo(value:Float)  {
          
      }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

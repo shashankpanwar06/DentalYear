@@ -14,6 +14,7 @@ enum kVideoCategory:Int {
     case Fun = 5524
     case Oral = 5521
     case smile = 5518
+    case premium = 8572
 }
 public class VideoBaseObject: NSObject, NSCoding {
 

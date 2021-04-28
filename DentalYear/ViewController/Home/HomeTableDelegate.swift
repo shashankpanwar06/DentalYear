@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVKit
 
 extension HomeViewController:UITableViewDelegate,UITableViewDataSource
 {
@@ -81,8 +82,15 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource
              let cellType = CellType.allValues[indexPath.row]
              aCell.setupCellForSelected(indexPath: indexPath, type: cellType, data: dataObject!)
             if cellType == .kAdOfTheMonth {
-                aCell.playBtnPressed = {
+                aCell.playBtnPressed = { url in
                     
+                    print("Play Btn Pressed in \(self)")
+                    let player = AVPlayer(url: url)
+                    let playerViewController = AVPlayerViewController()
+                    playerViewController.player = player
+                    self.present(playerViewController, animated: true) {
+                        playerViewController.player!.play()
+                    }
                 }
                 aCell.sliderValueChanged = {
                     value in 

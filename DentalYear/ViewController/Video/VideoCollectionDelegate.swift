@@ -30,7 +30,6 @@ extension VideoViewController:UICollectionViewDelegate,UICollectionViewDataSourc
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         self.selected(index: indexPath.item)
     }
     

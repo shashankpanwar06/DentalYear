@@ -22,22 +22,36 @@ class NotesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.tabBarController?.tabBar.isHidden = true
         configures()
-
-
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
 
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getData()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.tabBarController?.tabBar.isHidden = false
+    }
+    
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func configures() {
         self.view.layoutIfNeeded()
         btnNotes.makeButtonAllRoundCorner()

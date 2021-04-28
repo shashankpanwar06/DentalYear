@@ -105,6 +105,7 @@ class SubscriptionManager
         }
         return tempItems
     }
+    
     func productInfo(shouldPrint:Bool,product:SKProduct)  {
         if !shouldPrint {
             return

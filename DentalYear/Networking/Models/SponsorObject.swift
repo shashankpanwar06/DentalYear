@@ -76,8 +76,6 @@ public class SponsorBaseObject: NSObject, NSCoding {
         aCoder.encode(self.dataArray, forKey: "homeData")
 
     }
-    
-
 
 }
 

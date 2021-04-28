@@ -26,8 +26,9 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var shareBtn: UIButton!
+    @IBOutlet weak var videoThumbnailImageView: UIImageView!
     
-    var playBtnPressed:(()->Void)?
+    var playBtnPressed:((_ videoURL : URL)->Void)?
     var sliderValueChanged:((_ value:Float)->Void)?
     let player:FRadioPlayer = FRadioPlayer.shared
     
@@ -109,7 +110,7 @@ class HomeCell: UITableViewCell {
         self.contentView.backgroundColor = HomeStaticdata.getBackgroundColorFor(index: indexPath.row)
         viewContainer.backgroundColor = HomeStaticdata.getForgroundColorFor(index: indexPath.row)
         viewContainer.makeRoundCorner()
-        viewAudio.makeAllRoundCornerWithHeight()
+        viewAudio.makeAllRoundCorner()
         switch type {
         case .kHowToCelebrate:
             lblDetails.text = data.acf.howToCelebrate
@@ -140,6 +141,25 @@ class HomeCell: UITableViewCell {
         if type == .kAdOfTheMonth {
             lblDetails.isHidden = true
             viewAudio.isHidden = false
+            let url = APHandler.shared.baseUrl + "Audio"
+            let apiHandler:APHandler = APHandler.init()
+            apiHandler.makeGetAPIRequest(url: url)
+            apiHandler.didFinishSuccessfullyCallback = { response in
+                
+                let responseObject = response as? AFDataResponse<Any>
+                let audioBaseObject = AudioBaseObject(json: JSON(responseObject?.data as Any))
+                guard let dataArray:[AudioObject] = audioBaseObject.dataArray else {return}
+                
+                if dataArray.count < 1 {
+                    return
+                }
+                let audioObject = dataArray[0]
+        //        player.radioURL = URL(string: audioObject.acf.track)
+                
+                self.videoThumbnailImageView.sd_setImage(with: URL(string: audioObject.acf.videoThumbnail), placeholderImage: UIImage.init())
+                
+            }
+
             setupForAudio()
         }else
         {
@@ -169,7 +189,7 @@ class HomeCell: UITableViewCell {
     }
     
     @IBAction func onBtnPlay(_ sender: Any) {
-        playBtnPressed!()
+        
         if player.isPlaying
         {
             sliderAudio.value = 0.00
@@ -191,13 +211,12 @@ class HomeCell: UITableViewCell {
         dateFormatter.dateFormat = "LLLL"
         let nameOfMonth = dateFormatter.string(from: now)
         
-        if ((PINCache.shared().object(forKey: nameOfMonth)) != nil)
-        {
-            guard let audioBaseObject:AudioBaseObject = PINCache.shared().object(forKey: nameOfMonth) as? AudioBaseObject else {return}
-            //            self.ReloadViewAndTable(date: date)
-            self.PlayAudio(baseObject: audioBaseObject)
-        }else
-        {
+//        if ((PINCache.shared().object(forKey: nameOfMonth)) != nil)
+//        {
+//            guard let audioBaseObject:AudioBaseObject = PINCache.shared().object(forKey: nameOfMonth) as? AudioBaseObject else {return}
+//            self.PlayAudio(baseObject: audioBaseObject)
+//        }else
+//        {
             let url = APHandler.shared.baseUrl + "Audio"
             let apiHandler:APHandler = APHandler.init()
             apiHandler.makeGetAPIRequest(url: url)
@@ -207,17 +226,8 @@ class HomeCell: UITableViewCell {
                 let audioBaseObject = AudioBaseObject(json: JSON(responseObject?.data as Any))
                 self.PlayAudio(baseObject: audioBaseObject)
                 PINCache.shared().setObject(audioBaseObject, forKey: nameOfMonth)
-                
-                //                    self.dataArray = sponsorObject.dataArray ?? []
-                
-                
-                //                    if (self.dataArray.count == 0) {
-                //                        return
-                //                    }
-                //    //                self.ReloadViewAndTable(date: date)
-                //                    self.tblList.reloadData()
             }
-        }
+//        }
         
     }
     
@@ -230,16 +240,19 @@ class HomeCell: UITableViewCell {
             return
         }
         let audioObject = dataArray[0]
-        player.radioURL = URL(string: audioObject.acf.track)
-        player.totalAudioDuration = {
-            duration in
-            self.lblTime.text = "\(duration)"
-        }
-        player.currentTimeAudio = {
-            time in
-            self.sliderAudio.setValue(Float(time), animated: true)
-        }
-        player.play()
+//        player.radioURL = URL(string: audioObject.acf.track)
+        playBtnPressed!(URL(string: audioObject.acf.videourl)!)
+        videoThumbnailImageView.sd_setImage(with: URL(string: audioObject.acf.videoThumbnail), placeholderImage: UIImage.init())
+        
+//        player.totalAudioDuration = {
+//            duration in
+//            self.lblTime.text = "\(duration)"
+//        }
+//        player.currentTimeAudio = {
+//            time in
+//            self.sliderAudio.setValue(Float(time), animated: true)
+//        }
+//        player.play()
         btnPlay.setImage(UIImage(named: "icPauseAudio"), for: .normal)
     }
     

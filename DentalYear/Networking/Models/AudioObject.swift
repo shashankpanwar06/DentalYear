@@ -314,6 +314,8 @@ public class AudioObject : NSObject, NSCoding{
 public class AudioAcf : NSObject, NSCoding{
 
     var track : String!
+    var videourl : String!
+    var videoThumbnail : String!
 
     /**
      * Instantiate the instance using the passed json values to set the properties values
@@ -323,6 +325,8 @@ public class AudioAcf : NSObject, NSCoding{
             return
         }
         track = json["track"].stringValue
+        videourl = json["videourl"].stringValue
+        videoThumbnail = json["video_thumbnail"].stringValue
     }
 
     /**
@@ -333,6 +337,8 @@ public class AudioAcf : NSObject, NSCoding{
         var dictionary = [String:Any]()
         if track != nil{
             dictionary["track"] = track
+            dictionary["videourl"] = videourl
+            dictionary["video_thumbnail"] = videoThumbnail
         }
         return dictionary
     }
@@ -344,6 +350,8 @@ public class AudioAcf : NSObject, NSCoding{
     @objc required public init(coder aDecoder: NSCoder)
     {
         track = aDecoder.decodeObject(forKey: "track") as? String
+        videourl = aDecoder.decodeObject(forKey: "videourl") as? String
+        videoThumbnail = aDecoder.decodeObject(forKey: "video_thumbnail") as? String
     }
 
     /**
@@ -354,6 +362,8 @@ public class AudioAcf : NSObject, NSCoding{
     {
         if track != nil{
             aCoder.encode(track, forKey: "track")
+            aCoder.encode(videourl, forKey: "videourl")
+            aCoder.encode(videourl, forKey: "video_thumbnail")
         }
 
     }

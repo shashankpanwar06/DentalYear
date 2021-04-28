@@ -24,9 +24,9 @@ enum CellType:String {
     
     
     
-//    static let allValues = [kHowToCelebrate,kShareWithTeamMember,kDailyMarketingTip,kDailyPost,kHowToMaximizePost,kWeeklyMarketingExercise,kMarketingTrendsNews,kAdOfTheMonth,kThisDateInHistory,kIndustryEvents,kLookingAhead]
+    static let allValues = [kHowToCelebrate,kShareWithTeamMember,kDailyMarketingTip,kDailyPost,kHowToMaximizePost,kWeeklyMarketingExercise,kAdOfTheMonth,kMarketingTrendsNews,kThisDateInHistory,kIndustryEvents,kLookingAhead]
     
-    static let allValues = [kHowToCelebrate,kShareWithTeamMember,kDailyMarketingTip,kDailyPost,kHowToMaximizePost,kWeeklyMarketingExercise,kMarketingTrendsNews,kThisDateInHistory,kIndustryEvents,kLookingAhead]
+//    static let allValues = [kHowToCelebrate,kShareWithTeamMember,kDailyMarketingTip,kDailyPost,kHowToMaximizePost,kWeeklyMarketingExercise,kMarketingTrendsNews,kThisDateInHistory,kIndustryEvents,kLookingAhead]
     
 }
 

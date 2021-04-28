@@ -65,12 +65,12 @@ class SubscriptionCell: UICollectionViewCell {
             }
         }else if anitem.title == "ANNUAL PLAN"{
             if anitem.product != nil {
-                lblPrice.text = "Two Months Free, then \(anitem.product?.localizedPrice ?? anitem.price)/month"
+                lblPrice.text = "\(anitem.product?.localizedPrice ?? anitem.price)"
             }else
             {
-                lblPrice.text = "Two Months Free, then \(anitem.price)/month"
+                lblPrice.text = "\(anitem.price)"
             }
-            
+            lblDuration.text = anitem.Duration
         }
 
 //        lblDuration.text = anitem.Duration

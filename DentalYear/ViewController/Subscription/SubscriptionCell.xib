@@ -38,14 +38,14 @@
                                         <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="0.78950264084507038" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 99.99" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-Yz-jBZ">
-                                        <rect key="frame" x="16" y="311" width="156" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="$ 99.99" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-Yz-jBZ">
+                                        <rect key="frame" x="16" y="311" width="63.5" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                         <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="0.78950264079999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Per month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bY-yJ-sg1">
-                                        <rect key="frame" x="177" y="314.5" width="62" height="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Per month" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bY-yJ-sg1">
+                                        <rect key="frame" x="84.5" y="314.5" width="62" height="14"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="11"/>
                                         <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="0.78950264079999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="bottom" secondItem="PQz-QI-cDo" secondAttribute="bottom" constant="8" id="kc6-FW-EHX"/>
                                     <constraint firstAttribute="trailing" secondItem="OZU-RQ-zJG" secondAttribute="trailing" constant="20" id="n6N-Hd-d4K"/>
                                     <constraint firstItem="CnU-OD-gHZ" firstAttribute="centerX" secondItem="77A-Cc-hzS" secondAttribute="centerX" id="sZU-a5-oXU"/>
-                                    <constraint firstItem="OZU-RQ-zJG" firstAttribute="leading" secondItem="6bY-yJ-sg1" secondAttribute="trailing" constant="10" id="u7H-8O-IU4"/>
+                                    <constraint firstItem="OZU-RQ-zJG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6bY-yJ-sg1" secondAttribute="trailing" constant="10" id="u7H-8O-IU4"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -11,9 +11,14 @@ import PINCache
 import Alamofire
 import SwiftyJSON
 import EzPopup
+import SwiftyStoreKit
+import StoreKit
+import SVProgressHUD
 
 
 class VideoViewController: UIViewController {
+
+    
     var timerForShowScrollIndicator: Timer?
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDuration: UILabel!
@@ -24,6 +29,7 @@ class VideoViewController: UIViewController {
     @IBOutlet weak var fullScreenbackgroundView: UIView!
     @IBOutlet weak var btnOralHealth: UIButton!
     @IBOutlet weak var btnFunVibes: UIButton!
+    @IBOutlet weak var premiumVideoBtn: UIButton!
     var dataArray:[VideoObject] = [VideoObject]()
     var videoCatType:kVideoCategory = .Fun
     
@@ -49,9 +55,8 @@ class VideoViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         colList.flashScrollIndicators()
@@ -102,6 +107,7 @@ class VideoViewController: UIViewController {
         btnSMileQuotes.makeButtonAllRoundCorner()
         btnOralHealth.makeButtonAllRoundCorner()
         btnFunVibes.makeButtonAllRoundCorner()
+        premiumVideoBtn.makeButtonAllRoundCorner()
         colList.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: colList.frame.size.height - 8, right: 0)
         
     }
@@ -136,8 +142,21 @@ class VideoViewController: UIViewController {
         
     }
     func downloadFor(video:VideoObject)  {
-        
-        
+        if videoCatType == .premium{
+            if let purchasedId = video.acf.purchaseId{
+                if UserDefaults.standard.bool(forKey: purchasedId){
+                    print("Video is already purchased.")
+                    self.navigateToDownloadViewController(video: video)
+                }else{
+                    productInfo(productId: purchasedId)
+                }
+            }
+        }else{
+            navigateToDownloadViewController(video: video)
+        }
+    }
+    
+    private  func navigateToDownloadViewController(video : VideoObject){
         guard let aDownloadViewController:DownloadViewController = self.storyboard?.instantiateViewController(withIdentifier: "DownloadViewController") as? DownloadViewController else {return}
         aDownloadViewController.videoToDownload = video
         aDownloadViewController.playBtnPressed = {
@@ -170,6 +189,16 @@ class VideoViewController: UIViewController {
         setupForSmile()
     }
     
+    
+    @IBAction func premiumBtnPressed(_ sender: UIButton) {
+        if premiumVideoBtn.isSelected{
+            return
+        }
+        setupForPremium()
+    }
+    
+
+    
     func setUpPlayer()  {
         
         BMPlayerConf.allowLog = false
@@ -189,11 +218,8 @@ class VideoViewController: UIViewController {
         BMPlayerConf.enablePlaytimeGestures = true
         BMPlayerConf.shouldAutoPlay = false
         
-        
-        
-        
-        
     }
+    
     func setupForInitial()
     {
         self.btnFunVibes.isSelected = true
@@ -203,6 +229,8 @@ class VideoViewController: UIViewController {
         self.btnOralHealth.backgroundColor = UIColor.clear
         self.btnSMileQuotes.isSelected = false
         self.btnSMileQuotes.backgroundColor = UIColor.clear
+        premiumVideoBtn.isSelected = false
+        premiumVideoBtn.backgroundColor = UIColor.clear
         videoCatType = .Fun
     }
     func setupForFun()
@@ -214,6 +242,8 @@ class VideoViewController: UIViewController {
         self.btnOralHealth.backgroundColor = UIColor.clear
         self.btnSMileQuotes.isSelected = false
         self.btnSMileQuotes.backgroundColor = UIColor.clear
+        premiumVideoBtn.isSelected = false
+        premiumVideoBtn.backgroundColor = UIColor.clear
         videoCatType = .Fun
         reloadDataOnSlecetionChange()
         
@@ -227,6 +257,8 @@ class VideoViewController: UIViewController {
         self.btnFunVibes.backgroundColor = UIColor.clear
         self.btnSMileQuotes.isSelected = false
         self.btnSMileQuotes.backgroundColor = UIColor.clear
+        premiumVideoBtn.isSelected = false
+        premiumVideoBtn.backgroundColor = UIColor.clear
         videoCatType = .Oral
         reloadDataOnSlecetionChange()
         
@@ -241,9 +273,27 @@ class VideoViewController: UIViewController {
         self.btnOralHealth.backgroundColor = UIColor.clear
         self.btnFunVibes.isSelected = false
         self.btnFunVibes.backgroundColor = UIColor.clear
+        premiumVideoBtn.isSelected = false
+        premiumVideoBtn.backgroundColor = UIColor.clear
         videoCatType = .smile
         reloadDataOnSlecetionChange()
         
+    }
+    
+    func setupForPremium(){
+        premiumVideoBtn.isSelected = true
+        premiumVideoBtn.backgroundColor = UIColor.hexStringToUIColor(hex: "#3cbdeb")
+        
+        self.btnSMileQuotes.isSelected = false
+        self.btnSMileQuotes.backgroundColor = UIColor.clear
+        
+        self.btnOralHealth.isSelected = false
+        self.btnOralHealth.backgroundColor = UIColor.clear
+        self.btnFunVibes.isSelected = false
+        self.btnFunVibes.backgroundColor = UIColor.clear
+        
+        videoCatType = .premium
+        reloadDataOnSlecetionChange()
     }
     
     func reloadDataOnSlecetionChange()  {
@@ -252,10 +302,110 @@ class VideoViewController: UIViewController {
         {
             self.selectedVideo = self.dataArray[0]
             self.configurePlayer(video: self.selectedVideo!)
-            
+            print("Selected Video PurchaseId : \(self.selectedVideo?.acf.purchaseId)")
+//            if videoCatType == .premium{
+//                if let productId = self.selectedVideo?.acf.purchaseId{
+//                    productInfo(productId: productId)
+//                }
+//            }
         }
         self.colList.reloadData()
         
+    }
+    
+    func productInfo(productId : String){
+        SVProgressHUD.show()
+        SwiftyStoreKit.retrieveProductsInfo([productId]) { (result) in
+            SVProgressHUD.dismiss()
+            if let product = result.retrievedProducts.first{
+                let productPricing = product.localizedPrice
+                let productDescription = product.localizedDescription
+                let productTitle = product.localizedTitle
+                
+                let alertVC = UIAlertController(title: productTitle, message: "\(productDescription) - \(productPricing!)", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+                let okAction = UIAlertAction(title: "Buy", style: .default) { (action) in
+                    self.purchaseProduct(productId: productId)
+                }
+                alertVC.addAction(cancelAction)
+                alertVC.addAction(okAction)
+                self.present(alertVC, animated: true, completion: nil)
+               
+//                self.validateSubscription()
+            }
+            else if let invalidProductId = result.invalidProductIDs.first{
+                print("Invalid Product Id : \(invalidProductId)")
+            }else{
+                print("Error : \(result.error?.localizedDescription)")
+            }
+        }
+    }
+    
+    
+    func purchaseProduct(productId : String){
+        SVProgressHUD.show()
+        SwiftyStoreKit.purchaseProduct(productId) { (result) in
+            SVProgressHUD.dismiss()
+            switch result{
+            case .success(let product):
+                print("Purchase Successfull : \(product.productId)")
+                UserDefaults.standard.set(true, forKey: product.productId)
+            case .error(let error):
+                print("Purchase Failed : \(error)")
+            }
+        }
+        
+//        SwiftyStoreKit.purchaseProduct(productId, quantity: 1, atomically: true) { (result) in
+//            switch result{
+//            case .success(let product):
+//                print("Purchase Successfull : \(product.productId)")
+//            case .error(let error):
+//                print("Purchase Failed : \(error)")
+//            }
+//        }
+    }
+    
+    func validateSubscription() {
+        let appleValidator = AppleReceiptValidator(service: .sandbox, sharedSecret: "8e24def45fd249f29db28c77e4b1df35")
+        SwiftyStoreKit.verifyReceipt(using: appleValidator , forceRefresh: false) { result in
+            switch result {
+            case .success(let receipt):
+//                 Verify the purchase of a Subscription
+                let purchaseResult = SwiftyStoreKit.verifyPurchase(productId: "com.dentalyear.testNonConsumable", inReceipt: receipt)
+                switch purchaseResult {
+                case .purchased(let receiptItem):
+                    print("\("com.dentalyear.video42") is purchased: \(receiptItem)")
+                case .notPurchased:
+                    print("The user has never purchased \("com.dentalyear.video42")")
+                }
+                
+//                let purchaseResult = SwiftyStoreKit.verifySubscriptions(ofType: .autoRenewable, productIds: self.productIds, inReceipt: receipt, validUntil: Date())
+//
+//                switch purchaseResult {
+//                case .purchased(let expiryDate, let items):
+//                    print(" is valid until \(expiryDate)\n\(items)\n")
+//                    if let aSubscriptionOk = self.subscriptionOk
+//                    {
+//                        aSubscriptionOk()
+//                    }
+//                case .expired(let expiryDate, let items):
+//                    print(" is expired since \(expiryDate)\n\(items)\n")
+//                    if let aSubscriptionExpired = self.subscriptionExpired
+//                      {
+//                          aSubscriptionExpired()
+//                      }
+//                case .notPurchased:
+//                    print("The user has never purchased ")
+//                    if let aSubscriptionExpired = self.subscriptionExpired
+//                    {
+//                        aSubscriptionExpired()
+//                    }
+//                }
+
+            case .error(let error):
+                    print("Receipt verification failed: \(error)")
+            }
+        }
     }
     
     func loadData()  {
@@ -296,8 +446,8 @@ class VideoViewController: UIViewController {
         self.selectedVideo = self.dataArray[index]
         print("Selected Video Url : \(self.selectedVideo?.videoLink)")
         configurePlayer(video: self.selectedVideo!)
-        
     }
+    
     func switchToFullScreen(isFullScreen:Bool)  {
         DispatchQueue.main.async {
             
@@ -341,7 +491,6 @@ class VideoViewController: UIViewController {
     
     func configurePlayer(video:VideoObject)
     {
-        
         DispatchQueue.main.async {
             if self.videoPlayer != nil
             {
@@ -357,7 +506,7 @@ class VideoViewController: UIViewController {
             self.videoPlayer = BMPlayer(customControllView: controlView)
             
             
-            //        self.videoPlayer!.playerDelegate = self
+            self.videoPlayer?.delegate = self
             //        self.videoPlayer!.playbackDelegate = self
             self.viewVideoContainer.addSubview(self.videoPlayer!)
              
@@ -396,4 +545,49 @@ class VideoViewController: UIViewController {
      }
      */
     
+}
+
+extension VideoViewController : BMPlayerDelegate{
+    func bmPlayer(player: BMPlayer, playerStateDidChange state: BMPlayerState) {
+        print("Player State Did Change, Playing Status : \(state)")
+        if videoCatType == .premium{
+            if state == .playedToTheEnd{
+                if let purchasedId = self.selectedVideo?.acf.purchaseId{
+                    if UserDefaults.standard.bool(forKey: purchasedId){
+                        print("Video is already purchased.")
+                    }else{
+                        player.pause()
+                        productInfo(productId: purchasedId)
+                    }
+                }
+            }
+        }
+    }
+    
+    func bmPlayer(player: BMPlayer, loadedTimeDidChange loadedDuration: TimeInterval, totalDuration: TimeInterval) {
+        
+    }
+    
+    func bmPlayer(player: BMPlayer, playTimeDidChange currentTime: TimeInterval, totalTime: TimeInterval) {
+        
+    }
+    
+    func bmPlayer(player: BMPlayer, playerIsPlaying playing: Bool) {
+//        if videoCatType == .premium{
+//            if playing == true{
+//                if let purchasedId = self.selectedVideo?.acf.purchaseId{
+//                    if UserDefaults.standard.bool(forKey: purchasedId){
+//                        print("Video is already purchased.")
+//                    }else{
+//                        player.pause()
+//                        productInfo(productId: purchasedId)
+//                    }
+//                }
+//            }
+//        }
+    }
+    
+    func bmPlayer(player: BMPlayer, playerOrientChanged isFullscreen: Bool) {
+        
+    }
 }
