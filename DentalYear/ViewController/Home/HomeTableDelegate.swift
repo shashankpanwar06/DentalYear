@@ -81,6 +81,29 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource
             let aCell:HomeCell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCell
              let cellType = CellType.allValues[indexPath.row]
              aCell.setupCellForSelected(indexPath: indexPath, type: cellType, data: dataObject!)
+//            if cellType == .kAdOfTheMonth {
+//                aCell.playBtnPressed = { url in
+//                    
+//                    print("Play Btn Pressed in \(self)")
+//                    let player = AVPlayer(url: url)
+//                    let playerViewController = AVPlayerViewController()
+//                    playerViewController.player = player
+//                    self.present(playerViewController, animated: true) {
+//                        playerViewController.player!.play()
+//                    }
+//                }
+//                aCell.sliderValueChanged = {
+//                    value in 
+//                }
+//            }
+             
+             return aCell
+            
+        }else
+        {
+            let aCell:HomeCell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCell
+             let cellType = CellType.allValues[indexPath.row]
+             aCell.setupCellFor(indexPath: indexPath, type: cellType, data: dataObject!)
             if cellType == .kAdOfTheMonth {
                 aCell.playBtnPressed = { url in
                     
@@ -93,17 +116,9 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource
                     }
                 }
                 aCell.sliderValueChanged = {
-                    value in 
+                    value in
                 }
             }
-             
-             return aCell
-            
-        }else
-        {
-            let aCell:HomeCell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeCell
-             let cellType = CellType.allValues[indexPath.row]
-             aCell.setupCellFor(indexPath: indexPath, type: cellType, data: dataObject!)
              return aCell
         }
  
@@ -121,6 +136,12 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource
             return lableHeight  + 100 + cellImage.size.height + 200
         }else
         {
+            let cellType = CellType.allValues[indexPath.row]
+            if cellType == .kAdOfTheMonth{
+                let lableHeight = calCulculateCellHeightfor(indexpath: indexPath, tableView: tableView, type: cellType)
+                let cellImage = HomeStaticdata.getUnselectedImageFor(cellType: cellType)
+                return lableHeight  + 100 + cellImage.size.height + 200
+            }
             return 170
         }
         

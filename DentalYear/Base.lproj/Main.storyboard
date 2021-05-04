@@ -2036,13 +2036,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-R5-cll">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="385.5" height="150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWF-Sp-iXy">
-                                        <rect key="frame" x="0.0" y="61" width="414" height="89"/>
+                                        <rect key="frame" x="0.0" y="61" width="385.5" height="89"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jch-0X-jdH">
-                                                <rect key="frame" x="135" y="34" width="144" height="21.5"/>
+                                                <rect key="frame" x="121" y="34" width="144" height="21.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reception Signs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV4-4q-n5x">
                                                         <rect key="frame" x="0.0" y="0.0" width="144" height="21.5"/>
@@ -2082,23 +2082,23 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="y4V-bd-r0F">
-                                <rect key="frame" x="62" y="236" width="290" height="424"/>
+                                <rect key="frame" x="58" y="241" width="270" height="414"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="et6-eb-bRB">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="130"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="120"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIL-XN-080" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyG-HD-xib">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="image1BtnPressed:" destination="3Ln-2F-6xL" eventType="touchUpInside" id="QpA-O9-edC"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DentalYear (Check-In Sign) V1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mLT-Tq-9M9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2126,20 +2126,20 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egR-4b-JAr" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                                <rect key="frame" x="160" y="0.0" width="130" height="130"/>
+                                                <rect key="frame" x="150" y="0.0" width="120" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcN-R2-Pff">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="pdf1BtnPressed:" destination="3Ln-2F-6xL" eventType="touchUpInside" id="RVC-mg-gK0"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DentalYear (Check-In Sign) V1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q0v-05-XL7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-nl-X1E">
-                                                        <rect key="frame" x="99" y="92" width="31" height="38"/>
+                                                        <rect key="frame" x="89" y="82" width="31" height="38"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="38" id="4Rk-sU-vE8"/>
                                                             <constraint firstAttribute="width" constant="31" id="Dhy-Qm-tE7"/>
@@ -2174,20 +2174,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7ph-YO-3Td">
-                                        <rect key="frame" x="0.0" y="157" width="290" height="120"/>
+                                        <rect key="frame" x="0.0" y="147" width="270" height="120"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIH-xA-Obj" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RP-lM-gKF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="image2BtnPressed:" destination="3Ln-2F-6xL" eventType="touchUpInside" id="NSl-IX-JHB"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DentalYear (Check-In Sign) V2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-Bv-Kir">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2216,20 +2216,20 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBS-VX-CEE" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                                <rect key="frame" x="160" y="0.0" width="130" height="120"/>
+                                                <rect key="frame" x="150" y="0.0" width="120" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caD-RZ-9dW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="pdf2BtnPressed:" destination="3Ln-2F-6xL" eventType="touchUpInside" id="lvO-RT-Aut"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DentalYear (Check-In Sign) V2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Yt1-jY-EAE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-17-U8w">
-                                                        <rect key="frame" x="99" y="82" width="31" height="38"/>
+                                                        <rect key="frame" x="89" y="82" width="31" height="38"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="38" id="mKk-y0-L8j"/>
                                                             <constraint firstAttribute="width" constant="31" id="nx9-we-0Uc"/>
@@ -2264,20 +2264,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rcQ-ag-d7u">
-                                        <rect key="frame" x="0.0" y="304" width="290" height="120"/>
+                                        <rect key="frame" x="0.0" y="294" width="270" height="120"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxb-Ov-Kno" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-o6-dh7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="image3BtnPressed:" destination="3Ln-2F-6xL" eventType="touchUpInside" id="5fs-6p-Vkn"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DentalYear (Check-In Sign) V3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="keQ-yi-M8L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2306,20 +2306,20 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWQ-z9-gHD" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                                <rect key="frame" x="160" y="0.0" width="130" height="120"/>
+                                                <rect key="frame" x="150" y="0.0" width="120" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDe-o6-N0l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="pdf3BtnPressed:" destination="3Ln-2F-6xL" eventType="touchUpInside" id="cnN-rD-WVi"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DentalYear (Check-In Sign) V2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-cc-mld">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdf" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-TQ-C4j">
-                                                        <rect key="frame" x="99" y="82" width="31" height="38"/>
+                                                        <rect key="frame" x="89" y="82" width="31" height="38"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="38" id="Tc7-8b-Pvg"/>
                                                             <constraint firstAttribute="width" constant="31" id="Xtf-qo-sJK"/>
@@ -2382,13 +2382,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvR-zO-rci">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cab-Nd-A4Z">
-                                        <rect key="frame" x="0.0" y="61" width="414" height="89"/>
+                                        <rect key="frame" x="0.0" y="61" width="376" height="89"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nlk-F0-djx">
-                                                <rect key="frame" x="113" y="34" width="188" height="21.5"/>
+                                                <rect key="frame" x="94" y="34" width="188" height="21.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Media Content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buu-qg-qXw">
                                                         <rect key="frame" x="0.0" y="0.0" width="188" height="21.5"/>
@@ -2428,10 +2428,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xhe-dt-9st">
-                                <rect key="frame" x="16" y="381" width="382" height="284"/>
+                                <rect key="frame" x="16" y="381" width="344" height="284"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nnd-mN-xdQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjE-GX-cYo">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -2518,17 +2518,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFN-4n-jXe">
-                                                <rect key="frame" x="264" y="0.0" width="118" height="80"/>
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-DR-ZF9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="smileQuote4BtnPressed:" destination="iTL-5o-Zqc" eventType="touchUpInside" id="nhK-gz-fB7"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QUOTE IMAGE 4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nQZ-aB-NEI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2553,7 +2553,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nhq-Cw-Cv5">
-                                        <rect key="frame" x="0.0" y="102" width="382" height="80"/>
+                                        <rect key="frame" x="0.0" y="102" width="344" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-aq-Nxx">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -2639,17 +2639,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXK-pd-6JM">
-                                                <rect key="frame" x="264" y="0.0" width="118" height="80"/>
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-jt-e6E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="smileQuote8BtnPressed:" destination="iTL-5o-Zqc" eventType="touchUpInside" id="MoM-ka-1b8"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QUOTE IMAGE 8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="efj-jH-W7s">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2674,7 +2674,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bJQ-tN-c7X">
-                                        <rect key="frame" x="0.0" y="204" width="382" height="80"/>
+                                        <rect key="frame" x="0.0" y="204" width="344" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZx-Y2-PNn">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -2761,17 +2761,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pml-1a-X1s">
-                                                <rect key="frame" x="264" y="0.0" width="118" height="80"/>
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsQ-nS-qaO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="smileQuote12BtnPressed:" destination="iTL-5o-Zqc" eventType="touchUpInside" id="bmQ-W2-vTU"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QUOTE IMAGE 12.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KYp-Od-A1t">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2797,10 +2797,10 @@
                                 </subviews>
                             </stackView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYe-xX-SGG" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                <rect key="frame" x="74.5" y="158" width="265" height="30"/>
+                                <rect key="frame" x="67.5" y="158" width="241" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dental Infographics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zG-RE-M0n">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="241" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2827,10 +2827,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaX-i0-xFQ" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                <rect key="frame" x="74.5" y="321" width="265" height="30"/>
+                                <rect key="frame" x="67.5" y="321" width="241" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile Quotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sG-za-gMH">
-                                        <rect key="frame" x="0.0" y="0.0" width="265" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="241" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2857,7 +2857,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="F5L-p6-cxo">
-                                <rect key="frame" x="112" y="211" width="190" height="80"/>
+                                <rect key="frame" x="93" y="211" width="190" height="80"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3l-gu-boG">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>

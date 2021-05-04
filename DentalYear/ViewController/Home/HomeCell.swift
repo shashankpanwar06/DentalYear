@@ -73,6 +73,7 @@ class HomeCell: UITableViewCell {
         //        viewSeprator.isHidden = true
         self.layoutIfNeeded()
         shareBtn.isHidden = true
+//        imgArrow.isHidden = false
         
         lblTitle.text = type.rawValue
         imgView.image = HomeStaticdata.getUnselectedImageFor(cellType:type)
@@ -81,10 +82,43 @@ class HomeCell: UITableViewCell {
         lblDetails.isHidden = true
         viewAudio.isHidden  = true
         viewContainer.makeRoundCorner()
-        if type ==  .kAdOfTheMonth{
-            lblTime.text = "00:00"
-            sliderAudio.value = 0.00
-            btnPlay.setImage(UIImage(named: "icPlayAudio"), for: .normal)
+//        if type ==  .kAdOfTheMonth{
+//            lblTime.text = "00:00"
+//            sliderAudio.value = 0.00
+//            btnPlay.setImage(UIImage(named: "icPlayAudio"), for: .normal)
+//            if player.isPlaying
+//            {
+//                btnPlay.setImage(UIImage(named: "icPlayAudio"), for: .normal)
+//                player.pause()
+//                return
+//            }
+//        }
+        if type == .kAdOfTheMonth {
+//            imgArrow.isHidden = true
+            lblDetails.isHidden = true
+            viewAudio.isHidden = false
+            let url = APHandler.shared.baseUrl + "Audio"
+            let apiHandler:APHandler = APHandler.init()
+            apiHandler.makeGetAPIRequest(url: url, isSVProgressHudNeedToDisplay: false)
+            apiHandler.didFinishSuccessfullyCallback = { response in
+                
+                let responseObject = response as? AFDataResponse<Any>
+                let audioBaseObject = AudioBaseObject(json: JSON(responseObject?.data as Any))
+                guard let dataArray:[AudioObject] = audioBaseObject.dataArray else {return}
+                
+                if dataArray.count < 1 {
+                    return
+                }
+                let audioObject = dataArray[0]
+        //        player.radioURL = URL(string: audioObject.acf.track)
+                
+                self.videoThumbnailImageView.sd_setImage(with: URL(string: audioObject.acf.videoThumbnail), placeholderImage: UIImage.init())
+                
+            }
+
+            setupForAudio()
+        }else
+        {
             if player.isPlaying
             {
                 btnPlay.setImage(UIImage(named: "icPlayAudio"), for: .normal)
@@ -138,39 +172,39 @@ class HomeCell: UITableViewCell {
         default:
             lblDetails.text = ""
         }
-        if type == .kAdOfTheMonth {
-            lblDetails.isHidden = true
-            viewAudio.isHidden = false
-            let url = APHandler.shared.baseUrl + "Audio"
-            let apiHandler:APHandler = APHandler.init()
-            apiHandler.makeGetAPIRequest(url: url)
-            apiHandler.didFinishSuccessfullyCallback = { response in
-                
-                let responseObject = response as? AFDataResponse<Any>
-                let audioBaseObject = AudioBaseObject(json: JSON(responseObject?.data as Any))
-                guard let dataArray:[AudioObject] = audioBaseObject.dataArray else {return}
-                
-                if dataArray.count < 1 {
-                    return
-                }
-                let audioObject = dataArray[0]
-        //        player.radioURL = URL(string: audioObject.acf.track)
-                
-                self.videoThumbnailImageView.sd_setImage(with: URL(string: audioObject.acf.videoThumbnail), placeholderImage: UIImage.init())
-                
-            }
-
-            setupForAudio()
-        }else
-        {
-            if player.isPlaying
-            {
-                btnPlay.setImage(UIImage(named: "icPlayAudio"), for: .normal)
-                player.pause()
-                return
-            }
-        }
-        self.layoutIfNeeded()
+//        if type == .kAdOfTheMonth {
+//            lblDetails.isHidden = true
+//            viewAudio.isHidden = false
+//            let url = APHandler.shared.baseUrl + "Audio"
+//            let apiHandler:APHandler = APHandler.init()
+//            apiHandler.makeGetAPIRequest(url: url)
+//            apiHandler.didFinishSuccessfullyCallback = { response in
+//
+//                let responseObject = response as? AFDataResponse<Any>
+//                let audioBaseObject = AudioBaseObject(json: JSON(responseObject?.data as Any))
+//                guard let dataArray:[AudioObject] = audioBaseObject.dataArray else {return}
+//
+//                if dataArray.count < 1 {
+//                    return
+//                }
+//                let audioObject = dataArray[0]
+//        //        player.radioURL = URL(string: audioObject.acf.track)
+//
+//                self.videoThumbnailImageView.sd_setImage(with: URL(string: audioObject.acf.videoThumbnail), placeholderImage: UIImage.init())
+//
+//            }
+//
+//            setupForAudio()
+//        }else
+//        {
+//            if player.isPlaying
+//            {
+//                btnPlay.setImage(UIImage(named: "icPlayAudio"), for: .normal)
+//                player.pause()
+//                return
+//            }
+//        }
+//        self.layoutIfNeeded()
     }
     func setupForAudio()  {
         btnPlay.setImage(UIImage(named: "icPlayAudio"), for: .normal)

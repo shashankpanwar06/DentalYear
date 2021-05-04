@@ -166,25 +166,28 @@ class HomeViewController: UIViewController {
     
     
     func cellSelectedat(index:IndexPath)  {
-        if selectedCell != index.row {
-            if selectedCell == -1 {
+        let cellType = CellType.allValues[index.row]
+        if cellType != .kAdOfTheMonth{
+            if selectedCell != index.row {
+                if selectedCell == -1 {
 
-                selectedCell = index.row
-                let indexPathsToReload = [index]
-                tblList.reloadRows(at: indexPathsToReload, with: .automatic)
+                    selectedCell = index.row
+                    let indexPathsToReload = [index]
+                    tblList.reloadRows(at: indexPathsToReload, with: .automatic)
+                }else
+                {
+                    let preIndexPath = IndexPath(row: selectedCell, section: 0)
+                    selectedCell = index.row
+                    let indexPathsToReload = [index,preIndexPath]
+                    tblList.reloadRows(at: indexPathsToReload, with: .automatic)
+                    
+                }
             }else
             {
-                let preIndexPath = IndexPath(row: selectedCell, section: 0)
-                selectedCell = index.row
-                let indexPathsToReload = [index,preIndexPath]
+                selectedCell = -1
+                let indexPathsToReload = [index]
                 tblList.reloadRows(at: indexPathsToReload, with: .automatic)
-                
             }
-        }else
-        {
-            selectedCell = -1
-            let indexPathsToReload = [index]
-            tblList.reloadRows(at: indexPathsToReload, with: .automatic)
         }
     }
     

@@ -43,8 +43,10 @@ class APHandler {
     }
     
     //MARK: Request
-    func makeGetAPIRequest(url:String) { 
-        SVProgressHUD.show()
+    func makeGetAPIRequest(url:String , isSVProgressHudNeedToDisplay : Bool = true) {
+        if isSVProgressHudNeedToDisplay{
+            SVProgressHUD.show()
+        }
         
         var urlRequest = URLRequest(url: URL(string: url)!)
         urlRequest.httpMethod = HTTPMethod.get.rawValue
