@@ -41,10 +41,12 @@ class SplashViewController: UIViewController {
 
         SubscriptionManager.shared.validateSubscription()
         SubscriptionManager.shared.subscriptionOk = {
-            self.moveTotabbarAfter(delay: self.imgGif.gifLoopDuration)
+//            self.moveTotabbarAfter(delay: self.imgGif.gifLoopDuration)
+            self.moveTotabbarAfter(delay: 0)
         }
         SubscriptionManager.shared.subscriptionExpired = {
-            self.moveTosubscription(delay: self.imgGif.gifLoopDuration)
+//            self.moveTosubscription(delay: self.imgGif.gifLoopDuration)
+            self.moveTosubscription(delay: 0)
         }
     }
     

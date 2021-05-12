@@ -16,6 +16,12 @@ class SubscriptionViewController: UIViewController {
     @IBOutlet weak var btnSubscriptionDetails: UIButton!
     @IBOutlet weak var controllerPage: UIPageControl!
     @IBOutlet weak var colList: UICollectionView!
+    
+    var selectedSubscribtion : Int?{
+        didSet{
+            subscriptionPlanSlected()
+        }
+    }
     var dataArray:[item] = [item]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +30,29 @@ class SubscriptionViewController: UIViewController {
         configureCollectionView()
         loadData()
         getInAppPurchaseProducts()
+        subscriptionPlanSlected()
     }
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+
+    func subscriptionPlanSlected(){
+        let anitem = self.dataArray[self.controllerPage.currentPage]
+        if anitem.title == "MONTHLY PLAN"{
+            btnSubscribe.setTitle("Subscribe for \(anitem.title)", for: .normal)
+//            if anitem.product != nil {
+//                lblPrice.text = "First Month Free, then \(anitem.product?.localizedPrice ?? anitem.price)/month"
+//            }else
+//            {
+//                lblPrice.text = "First Month Free, then \(anitem.price)/month"
+//            }
+        }else if anitem.title == "ANNUAL PLAN"{
+            btnSubscribe.setTitle("Subscribe for \(anitem.title)", for: .normal)
+//            if anitem.product != nil {
+//                lblPrice.text = "\(anitem.product?.localizedPrice ?? anitem.price)"
+//            }else
+//            {
+//                lblPrice.text = "\(anitem.price)"
+//            }
+//            lblDuration.text = anitem.Duration
+        }
     }
     
     func configureCallBacks()  {
@@ -84,6 +110,12 @@ class SubscriptionViewController: UIViewController {
          }
 
     }
+    
+    @IBAction func pageControlEvent(_ sender: UIPageControl) {
+        let item = self.dataArray[self.controllerPage.currentPage]
+        print("Item : \(item)")
+    }
+    
     
     func loadData()  {
         dataArray = SubscriptionData.getSubscriptionDataArray()

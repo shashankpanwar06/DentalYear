@@ -1847,13 +1847,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try DentalYear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgo-XA-Rcu">
-                                <rect key="frame" x="114.5" y="129" width="185" height="29.5"/>
+                                <rect key="frame" x="114.5" y="129" width="185.5" height="30"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
                                 <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="051-14-nZk">
-                                <rect key="frame" x="0.0" y="178.5" width="414" height="717.5"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCi-0O-Hp3">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
@@ -1888,6 +1888,9 @@
                                                 </constraints>
                                                 <color key="pageIndicatorTintColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="currentPageIndicatorTintColor" red="0.0" green="0.66274509803921566" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="pageControlEvent:" destination="0yW-YM-x1c" eventType="valueChanged" id="T7A-S1-DVL"/>
+                                                </connections>
                                             </pageControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vM0-4E-aww">
                                                 <rect key="frame" x="57" y="467" width="300" height="54"/>
@@ -1896,7 +1899,7 @@
                                                     <constraint firstAttribute="width" constant="300" id="Efb-XY-VUc"/>
                                                     <constraint firstAttribute="height" constant="54" id="X3l-MN-qKd"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                                 <state key="normal" title="Start Free Trial">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1989,7 +1992,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIB-KP-T5W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1738" y="-613"/>
+            <point key="canvasLocation" x="-1739.1304347826087" y="-613.39285714285711"/>
         </scene>
         <!--Video-->
         <scene sceneID="ggx-nS-8zz">
@@ -2382,13 +2385,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvR-zO-rci">
-                                <rect key="frame" x="0.0" y="0.0" width="376" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cab-Nd-A4Z">
-                                        <rect key="frame" x="0.0" y="61" width="376" height="89"/>
+                                        <rect key="frame" x="0.0" y="61" width="414" height="89"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nlk-F0-djx">
-                                                <rect key="frame" x="94" y="34" width="188" height="21.5"/>
+                                                <rect key="frame" x="113" y="34" width="188" height="21.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Media Content" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buu-qg-qXw">
                                                         <rect key="frame" x="0.0" y="0.0" width="188" height="21.5"/>
@@ -2428,10 +2431,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xhe-dt-9st">
-                                <rect key="frame" x="16" y="381" width="344" height="284"/>
+                                <rect key="frame" x="16" y="381" width="382" height="284"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nnd-mN-xdQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="344" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjE-GX-cYo">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -2518,17 +2521,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFN-4n-jXe">
-                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="264" y="0.0" width="118" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-DR-ZF9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="smileQuote4BtnPressed:" destination="iTL-5o-Zqc" eventType="touchUpInside" id="nhK-gz-fB7"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QUOTE IMAGE 4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nQZ-aB-NEI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2553,7 +2556,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nhq-Cw-Cv5">
-                                        <rect key="frame" x="0.0" y="102" width="344" height="80"/>
+                                        <rect key="frame" x="0.0" y="102" width="382" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-aq-Nxx">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -2639,17 +2642,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXK-pd-6JM">
-                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="264" y="0.0" width="118" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-jt-e6E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="smileQuote8BtnPressed:" destination="iTL-5o-Zqc" eventType="touchUpInside" id="MoM-ka-1b8"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QUOTE IMAGE 8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="efj-jH-W7s">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2674,7 +2677,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bJQ-tN-c7X">
-                                        <rect key="frame" x="0.0" y="204" width="344" height="80"/>
+                                        <rect key="frame" x="0.0" y="204" width="382" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZx-Y2-PNn">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -2761,17 +2764,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pml-1a-X1s">
-                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="264" y="0.0" width="118" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsQ-nS-qaO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="smileQuote12BtnPressed:" destination="iTL-5o-Zqc" eventType="touchUpInside" id="bmQ-W2-vTU"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QUOTE IMAGE 12.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KYp-Od-A1t">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2797,10 +2800,10 @@
                                 </subviews>
                             </stackView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYe-xX-SGG" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                <rect key="frame" x="67.5" y="158" width="241" height="30"/>
+                                <rect key="frame" x="74.5" y="158" width="265" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dental Infographics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zG-RE-M0n">
-                                        <rect key="frame" x="0.0" y="0.0" width="241" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2827,10 +2830,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaX-i0-xFQ" customClass="RoundCornerView" customModule="DentalYear" customModuleProvider="target">
-                                <rect key="frame" x="67.5" y="321" width="241" height="30"/>
+                                <rect key="frame" x="74.5" y="321" width="265" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile Quotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sG-za-gMH">
-                                        <rect key="frame" x="0.0" y="0.0" width="241" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2857,7 +2860,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="F5L-p6-cxo">
-                                <rect key="frame" x="93" y="211" width="190" height="80"/>
+                                <rect key="frame" x="112" y="211" width="190" height="80"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3l-gu-boG">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>

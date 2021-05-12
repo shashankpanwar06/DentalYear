@@ -19,6 +19,7 @@ class SubscriptionCell: UICollectionViewCell {
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -72,7 +73,6 @@ class SubscriptionCell: UICollectionViewCell {
             }
             lblDuration.text = anitem.Duration
         }
-
 //        lblDuration.text = anitem.Duration
         
         lblSubTitle.text = anitem.subtitle

@@ -22,12 +22,14 @@ extension SubscriptionViewController :UICollectionViewDelegate,UICollectionViewD
         
     }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            
     //        return CGSize(width: 150 height: self.colList.frame.height - 10)
             return CGSize(width: self.colList.frame.width, height: self.colList.frame.height )
         }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         self.controllerPage.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+        self.selectedSubscribtion = self.controllerPage.currentPage
     }
     
 }
