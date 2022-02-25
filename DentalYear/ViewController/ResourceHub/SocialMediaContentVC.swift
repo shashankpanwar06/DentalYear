@@ -8,11 +8,42 @@
 
 import UIKit
 
-class SocialMediaContentVC: UIViewController {
+class SocialMediaContentVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 24
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "smileQuoteCell", for: indexPath) as? SmileQuoteCell{
+            let imageName = "QUOTE IMAGE \(indexPath.item + 1).jpg"
+            cell.quoteImageView.image = UIImage(named: imageName)
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 80, height: 80)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let imageName = "QUOTE IMAGE \(indexPath.item + 1)"
+        if let imagePath = Bundle.main.path(forResource: imageName, ofType: "jpg"){
+            let dc = UIDocumentInteractionController(url: URL(fileURLWithPath: imagePath))
+            dc.delegate = self
+            dc.presentPreview(animated: true)
+        }
+    }
+    
+    @IBOutlet weak var smileQuoteCollectionView: UICollectionView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        smileQuoteCollectionView.delegate = self
+        smileQuoteCollectionView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {

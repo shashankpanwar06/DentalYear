@@ -53,7 +53,8 @@ class SplashViewController: UIViewController {
     func moveTosubscription(delay:Double)
     {
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-            self.MoveToSubscription()
+//            self.MoveToSubscription()
+            self.moveToGuideScreens()
         }
     }
     func moveTotabbarAfter(delay:Double)
@@ -78,6 +79,13 @@ class SplashViewController: UIViewController {
         AppDelegate().sharedInstance().window?.rootViewController = tabBarController
         AppDelegate().sharedInstance().window!.makeKeyAndVisible()
 
+    }
+    
+    func moveToGuideScreens(){
+        let storyboard : UIStoryboard = UIStoryboard(name: "Onboading", bundle: nil)
+        guard let baseOnboardingVC = storyboard.instantiateViewController(withIdentifier: "BaseOnboardingVC") as? BaseOnboardingVC else {return}
+        AppDelegate().sharedInstance().window?.rootViewController = baseOnboardingVC
+        AppDelegate().sharedInstance().window!.makeKeyAndVisible()
     }
 
 }

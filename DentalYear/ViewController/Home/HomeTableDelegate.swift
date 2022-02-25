@@ -132,8 +132,10 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource
         if self.selectedCell == indexPath.row {
             let cellType = CellType.allValues[indexPath.row]
             let lableHeight = calCulculateCellHeightfor(indexpath: indexPath, tableView: tableView, type: cellType)
-            let cellImage = HomeStaticdata.getUnselectedImageFor(cellType: cellType)
-            return lableHeight  + 100 + cellImage.size.height + 200
+//            let cellImage = HomeStaticdata.getUnselectedImageFor(cellType: cellType)
+            let cellImage = HomeStaticdata.getSelectedImageFor(cellType: cellType)
+            return lableHeight  + 100 + cellImage.size.height + 200  
+            
         }else
         {
             let cellType = CellType.allValues[indexPath.row]

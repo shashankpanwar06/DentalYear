@@ -36,7 +36,7 @@ enum AppStoreReviewManager {
         defaults.set(actionCount, forKey: "count")
 
         // 5.
-        guard actionCount >= minimumReviewWorthyActionCount else {
+        guard actionCount >=  minimumReviewWorthyActionCount else {
           return
         }
 

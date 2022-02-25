@@ -26,12 +26,11 @@ class SubscriptionData {
     {
         
         var items = [item]()
-        let monthlyItem:item = item(title: "MONTHLY PLAN", subtitle: "30 DAYS FREE access", items: SubscriptionData.getMonthlyFeaturesList(), price: "$ 9.99", Duration: "Per Month", discount: "", productId: "com.dentalyear.monthly30FREE", imageTooth: "icLeftNav")
+        let monthlyItem:item = item(title: "MONTHLY PLAN", subtitle: "7 DAYS FREE access", items: SubscriptionData.getMonthlyFeaturesList(), price: "$ 9.99", Duration: "Per Month", discount: "", productId: "com.dentalyear.monthly30FREE", imageTooth: "icLeftNav")
         items.append(monthlyItem)
         
-        let yearlyItem:item = item(title: "ANNUAL PLAN", subtitle: "2 MONTHS FREE access", items: SubscriptionData.getMonthlyFeaturesList(), price: "$ 99.99", Duration: "Per Year", discount: "$ 119.88", productId: "com.dyear.dentalyear.yr365", imageTooth: "icLeftNav")
-        items.append(yearlyItem)
-
+//        let yearlyItem:item = item(title: "ANNUAL PLAN", subtitle: "2 MONTHS FREE access", items: SubscriptionData.getMonthlyFeaturesList(), price: "$ 99.99", Duration: "Per Year", discount: "$ 119.88", productId: "com.dyear.dentalyear.yr365", imageTooth: "icLeftNav")
+//        items.append(yearlyItem)
         return items
     }
     

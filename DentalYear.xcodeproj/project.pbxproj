@@ -97,6 +97,33 @@
 		6AF45BA424DACE4F00211F56 /* MontserratRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AF45BA324DACE4F00211F56 /* MontserratRegular.ttf */; };
 		6AF45BA824DAD43800211F56 /* DYTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF45BA724DAD43800211F56 /* DYTabBarViewController.swift */; };
 		6AF45BAA24DADE2500211F56 /* RollingPitTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF45BA924DADE2500211F56 /* RollingPitTabBar.swift */; };
+		7705660227A5916D007C3CD8 /* screen-1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 770565FF27A5916C007C3CD8 /* screen-1.gif */; };
+		7705660327A5916D007C3CD8 /* screen-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7705660027A5916D007C3CD8 /* screen-2.gif */; };
+		7705660427A5916D007C3CD8 /* screen-3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7705660127A5916D007C3CD8 /* screen-3.gif */; };
+		7705661327A92D75007C3CD8 /* screen-3_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7705661127A92D75007C3CD8 /* screen-3_1.gif */; };
+		7705661427A92D75007C3CD8 /* screen-2_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7705661227A92D75007C3CD8 /* screen-2_1.gif */; };
+		77815815279961EF008E5B19 /* FirstOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77815814279961EF008E5B19 /* FirstOnboardingVC.swift */; };
+		778158172799621E008E5B19 /* SecondOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778158162799621E008E5B19 /* SecondOnboardingVC.swift */; };
+		7781581927996243008E5B19 /* ThirdOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7781581827996243008E5B19 /* ThirdOnboardingVC.swift */; };
+		7781581B27996963008E5B19 /* BaseOnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7781581A27996963008E5B19 /* BaseOnboardingVC.swift */; };
+		7781581D27996B31008E5B19 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7781581C27996B31008E5B19 /* PageVC.swift */; };
+		778272E22799E0880004A767 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778272E12799E0880004A767 /* ReviewCell.swift */; };
+		77C3EAE927987C06008E8D9D /* Onboading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C3EAE827987C06008E8D9D /* Onboading.storyboard */; };
+		941076D12711E1A600E3A96E /* Content To Film.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 941076CF2711E1A400E3A96E /* Content To Film.pdf */; };
+		941076D22711E1A600E3A96E /* Video Filming.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 941076D02711E1A600E3A96E /* Video Filming.pdf */; };
+		941076D42712C88E00E3A96E /* SmileQuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941076D32712C88E00E3A96E /* SmileQuoteCell.swift */; };
+		941076E1271307BC00E3A96E /* QUOTE IMAGE 18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076D5271307AD00E3A96E /* QUOTE IMAGE 18.jpg */; };
+		941076E2271307BC00E3A96E /* QUOTE IMAGE 23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076D6271307AE00E3A96E /* QUOTE IMAGE 23.jpg */; };
+		941076E3271307BC00E3A96E /* QUOTE IMAGE 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076D7271307B000E3A96E /* QUOTE IMAGE 13.jpg */; };
+		941076E4271307BC00E3A96E /* QUOTE IMAGE 16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076D8271307B100E3A96E /* QUOTE IMAGE 16.jpg */; };
+		941076E5271307BC00E3A96E /* QUOTE IMAGE 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076D9271307B200E3A96E /* QUOTE IMAGE 15.jpg */; };
+		941076E6271307BC00E3A96E /* QUOTE IMAGE 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076DA271307B400E3A96E /* QUOTE IMAGE 14.jpg */; };
+		941076E7271307BC00E3A96E /* QUOTE IMAGE 17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076DB271307B500E3A96E /* QUOTE IMAGE 17.jpg */; };
+		941076E8271307BC00E3A96E /* QUOTE IMAGE 19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076DC271307B600E3A96E /* QUOTE IMAGE 19.jpg */; };
+		941076E9271307BC00E3A96E /* QUOTE IMAGE 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076DD271307B800E3A96E /* QUOTE IMAGE 20.jpg */; };
+		941076EA271307BC00E3A96E /* QUOTE IMAGE 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076DE271307B900E3A96E /* QUOTE IMAGE 21.jpg */; };
+		941076EB271307BC00E3A96E /* QUOTE IMAGE 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076DF271307BA00E3A96E /* QUOTE IMAGE 22.jpg */; };
+		941076EC271307BC00E3A96E /* QUOTE IMAGE 24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 941076E0271307BC00E3A96E /* QUOTE IMAGE 24.jpg */; };
 		942D07FC2599D42000675A30 /* DentalYear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A17F50F24DAC761002D8F8C /* DentalYear.xcdatamodeld */; };
 		942D07FD2599D42000675A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A17F50A24DAC761002D8F8C /* ViewController.swift */; };
 		942D07FE2599D42000675A30 /* BMSubtitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65341F24EAFA9000BB5632 /* BMSubtitles.swift */; };
@@ -194,6 +221,10 @@
 		94367F1225D31B8F006C80F4 /* Oral Health Tips (Infographic) DY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94367F1025D31B8E006C80F4 /* Oral Health Tips (Infographic) DY.jpg */; };
 		94367F1325D31B8F006C80F4 /* Oral Health Tips (Infographic) DY.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 94367F1125D31B8E006C80F4 /* Oral Health Tips (Infographic) DY.pdf */; };
 		94367F1925D31BB7006C80F4 /* SocialMediaContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94367F1825D31BB7006C80F4 /* SocialMediaContentVC.swift */; };
+		944D3FA626A7341A00616EE5 /* InboundMarketingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D3FA526A7341A00616EE5 /* InboundMarketingVC.swift */; };
+		944D3FA826A7343A00616EE5 /* BrandBuildingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D3FA726A7343A00616EE5 /* BrandBuildingVC.swift */; };
+		944D3FAA26A73BDC00616EE5 /* 25 SEO Tasks for Dental Websites.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 944D3FA926A73BDC00616EE5 /* 25 SEO Tasks for Dental Websites.pdf */; };
+		944D3FAC26A73C0C00616EE5 /* Color Meanings for Dental Brands.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 944D3FAB26A73C0C00616EE5 /* Color Meanings for Dental Brands.pdf */; };
 		945AF7D225D272690082871D /* ResourceHubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945AF7D125D272690082871D /* ResourceHubVC.swift */; };
 		945AF7E325D2B1560082871D /* DentalYear (Check-In Sign) V1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 945AF7DD25D2B1530082871D /* DentalYear (Check-In Sign) V1.jpg */; };
 		945AF7E425D2B1560082871D /* DentalYear (Check-In Sign) V1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 945AF7DE25D2B1540082871D /* DentalYear (Check-In Sign) V1.pdf */; };
@@ -204,6 +235,7 @@
 		945AF7F625D2B5510082871D /* ReceptionSignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945AF7F525D2B5510082871D /* ReceptionSignVC.swift */; };
 		945AF7FD25D2F9510082871D /* 52 Blog Post Ideas.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 945AF7FC25D2F9500082871D /* 52 Blog Post Ideas.pdf */; };
 		945AF80425D2FCF40082871D /* 123 Dental Slogans.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 945AF80325D2FCF40082871D /* 123 Dental Slogans.pdf */; };
+		946DFC5926A44B0E00B47C6C /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946DFC5826A44B0E00B47C6C /* LunchViewController.swift */; };
 		94B308AB25D3BD310013AD3A /* QUOTE IMAGE 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94B308A125D3BD2D0013AD3A /* QUOTE IMAGE 9.jpg */; };
 		94B308AC25D3BD310013AD3A /* QUOTE IMAGE 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94B308A225D3BD2D0013AD3A /* QUOTE IMAGE 1.jpg */; };
 		94B308AD25D3BD310013AD3A /* QUOTE IMAGE 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94B308A325D3BD2E0013AD3A /* QUOTE IMAGE 5.jpg */; };
@@ -342,11 +374,42 @@
 		6AF45BA324DACE4F00211F56 /* MontserratRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MontserratRegular.ttf; sourceTree = "<group>"; };
 		6AF45BA724DAD43800211F56 /* DYTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTabBarViewController.swift; sourceTree = "<group>"; };
 		6AF45BA924DADE2500211F56 /* RollingPitTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollingPitTabBar.swift; sourceTree = "<group>"; };
+		770565FF27A5916C007C3CD8 /* screen-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "screen-1.gif"; sourceTree = "<group>"; };
+		7705660027A5916D007C3CD8 /* screen-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "screen-2.gif"; sourceTree = "<group>"; };
+		7705660127A5916D007C3CD8 /* screen-3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "screen-3.gif"; sourceTree = "<group>"; };
+		7705661127A92D75007C3CD8 /* screen-3_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "screen-3_1.gif"; sourceTree = "<group>"; };
+		7705661227A92D75007C3CD8 /* screen-2_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "screen-2_1.gif"; sourceTree = "<group>"; };
+		77815814279961EF008E5B19 /* FirstOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingVC.swift; sourceTree = "<group>"; };
+		778158162799621E008E5B19 /* SecondOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingVC.swift; sourceTree = "<group>"; };
+		7781581827996243008E5B19 /* ThirdOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingVC.swift; sourceTree = "<group>"; };
+		7781581A27996963008E5B19 /* BaseOnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOnboardingVC.swift; sourceTree = "<group>"; };
+		7781581C27996B31008E5B19 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		778272E12799E0880004A767 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		77C3EAE827987C06008E8D9D /* Onboading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboading.storyboard; sourceTree = "<group>"; };
+		941076CF2711E1A400E3A96E /* Content To Film.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Content To Film.pdf"; sourceTree = "<group>"; };
+		941076D02711E1A600E3A96E /* Video Filming.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Video Filming.pdf"; sourceTree = "<group>"; };
+		941076D32712C88E00E3A96E /* SmileQuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileQuoteCell.swift; sourceTree = "<group>"; };
+		941076D5271307AD00E3A96E /* QUOTE IMAGE 18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 18.jpg"; sourceTree = "<group>"; };
+		941076D6271307AE00E3A96E /* QUOTE IMAGE 23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 23.jpg"; sourceTree = "<group>"; };
+		941076D7271307B000E3A96E /* QUOTE IMAGE 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 13.jpg"; sourceTree = "<group>"; };
+		941076D8271307B100E3A96E /* QUOTE IMAGE 16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 16.jpg"; sourceTree = "<group>"; };
+		941076D9271307B200E3A96E /* QUOTE IMAGE 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 15.jpg"; sourceTree = "<group>"; };
+		941076DA271307B400E3A96E /* QUOTE IMAGE 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 14.jpg"; sourceTree = "<group>"; };
+		941076DB271307B500E3A96E /* QUOTE IMAGE 17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 17.jpg"; sourceTree = "<group>"; };
+		941076DC271307B600E3A96E /* QUOTE IMAGE 19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 19.jpg"; sourceTree = "<group>"; };
+		941076DD271307B800E3A96E /* QUOTE IMAGE 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 20.jpg"; sourceTree = "<group>"; };
+		941076DE271307B900E3A96E /* QUOTE IMAGE 21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 21.jpg"; sourceTree = "<group>"; };
+		941076DF271307BA00E3A96E /* QUOTE IMAGE 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 22.jpg"; sourceTree = "<group>"; };
+		941076E0271307BC00E3A96E /* QUOTE IMAGE 24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 24.jpg"; sourceTree = "<group>"; };
 		942D08602599D42000675A30 /* DentalYearBFTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DentalYearBFTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942D08612599D42100675A30 /* DentalYear copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DentalYear copy-Info.plist"; path = "/Users/shashankpanwar/Documents/Projects/DentalYear/DentalYear/DentalYear copy-Info.plist"; sourceTree = "<absolute>"; };
 		94367F1025D31B8E006C80F4 /* Oral Health Tips (Infographic) DY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Oral Health Tips (Infographic) DY.jpg"; sourceTree = "<group>"; };
 		94367F1125D31B8E006C80F4 /* Oral Health Tips (Infographic) DY.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Oral Health Tips (Infographic) DY.pdf"; sourceTree = "<group>"; };
 		94367F1825D31BB7006C80F4 /* SocialMediaContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaContentVC.swift; sourceTree = "<group>"; };
+		944D3FA526A7341A00616EE5 /* InboundMarketingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboundMarketingVC.swift; sourceTree = "<group>"; };
+		944D3FA726A7343A00616EE5 /* BrandBuildingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandBuildingVC.swift; sourceTree = "<group>"; };
+		944D3FA926A73BDC00616EE5 /* 25 SEO Tasks for Dental Websites.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "25 SEO Tasks for Dental Websites.pdf"; sourceTree = "<group>"; };
+		944D3FAB26A73C0C00616EE5 /* Color Meanings for Dental Brands.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Color Meanings for Dental Brands.pdf"; sourceTree = "<group>"; };
 		945AF7D125D272690082871D /* ResourceHubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceHubVC.swift; sourceTree = "<group>"; };
 		945AF7DD25D2B1530082871D /* DentalYear (Check-In Sign) V1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "DentalYear (Check-In Sign) V1.jpg"; sourceTree = "<group>"; };
 		945AF7DE25D2B1540082871D /* DentalYear (Check-In Sign) V1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "DentalYear (Check-In Sign) V1.pdf"; sourceTree = "<group>"; };
@@ -357,6 +420,7 @@
 		945AF7F525D2B5510082871D /* ReceptionSignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceptionSignVC.swift; sourceTree = "<group>"; };
 		945AF7FC25D2F9500082871D /* 52 Blog Post Ideas.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "52 Blog Post Ideas.pdf"; sourceTree = "<group>"; };
 		945AF80325D2FCF40082871D /* 123 Dental Slogans.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "123 Dental Slogans.pdf"; sourceTree = "<group>"; };
+		946DFC5826A44B0E00B47C6C /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
 		94B308A125D3BD2D0013AD3A /* QUOTE IMAGE 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 9.jpg"; sourceTree = "<group>"; };
 		94B308A225D3BD2D0013AD3A /* QUOTE IMAGE 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 1.jpg"; sourceTree = "<group>"; };
 		94B308A325D3BD2E0013AD3A /* QUOTE IMAGE 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "QUOTE IMAGE 5.jpg"; sourceTree = "<group>"; };
@@ -448,7 +512,8 @@
 		6A17F50524DAC761002D8F8C /* DentalYear */ = {
 			isa = PBXGroup;
 			children = (
-				6A07F31D24E54BFB00E6A8B3 /* splashlogo.gif */,
+				770565FE27A5914C007C3CD8 /* GIFs */,
+				77C3EAE7279878C0008E8D9D /* Storyboard */,
 				6AEF75BC24F0F8DB00A89D85 /* SubscriptionManager */,
 				6A65343024EB1A0600BB5632 /* AppStoreReview */,
 				6A65341B24EAFA6500BB5632 /* VideoPlayer */,
@@ -463,9 +528,7 @@
 				6ADCE16C24E199B9002B63E7 /* Appdelegate+coredata.swift */,
 				6A17F50A24DAC761002D8F8C /* ViewController.swift */,
 				6A69787424DC33650021FA9E /* MainTabBar */,
-				6A17F50C24DAC761002D8F8C /* Main.storyboard */,
 				6A17F51224DAC764002D8F8C /* Assets.xcassets */,
-				6A17F51424DAC764002D8F8C /* LaunchScreen.storyboard */,
 				6A17F51724DAC764002D8F8C /* Info.plist */,
 				6A17F50F24DAC761002D8F8C /* DentalYear.xcdatamodeld */,
 			);
@@ -571,6 +634,7 @@
 		6A69787024DC30530021FA9E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				778158132799611A008E5B19 /* Onboarding */,
 				945AF7D025D272430082871D /* ResourceHub */,
 				94D8FF0E25849A5E00306676 /* FoodHoliday */,
 				6A39180124EFE957001F8837 /* Subscription */,
@@ -595,6 +659,7 @@
 				6AB188F124F0511C000B2E5C /* SubscriptionDetails.xib */,
 				94D8FF172584E3D600306676 /* FoodHolidayCellTableViewCell.swift */,
 				94D8FF1C25850C2900306676 /* RoundCornerView.swift */,
+				778272E12799E0880004A767 /* ReviewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -724,6 +789,41 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		770565FE27A5914C007C3CD8 /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				6A07F31D24E54BFB00E6A8B3 /* splashlogo.gif */,
+				770565FF27A5916C007C3CD8 /* screen-1.gif */,
+				7705660027A5916D007C3CD8 /* screen-2.gif */,
+				7705661227A92D75007C3CD8 /* screen-2_1.gif */,
+				7705661127A92D75007C3CD8 /* screen-3_1.gif */,
+				7705660127A5916D007C3CD8 /* screen-3.gif */,
+			);
+			path = GIFs;
+			sourceTree = "<group>";
+		};
+		778158132799611A008E5B19 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				77815814279961EF008E5B19 /* FirstOnboardingVC.swift */,
+				778158162799621E008E5B19 /* SecondOnboardingVC.swift */,
+				7781581827996243008E5B19 /* ThirdOnboardingVC.swift */,
+				7781581A27996963008E5B19 /* BaseOnboardingVC.swift */,
+				7781581C27996B31008E5B19 /* PageVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		77C3EAE7279878C0008E8D9D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6A17F50C24DAC761002D8F8C /* Main.storyboard */,
+				6A17F51424DAC764002D8F8C /* LaunchScreen.storyboard */,
+				77C3EAE827987C06008E8D9D /* Onboading.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		94367F0F25D31B71006C80F4 /* SocialMediaContent */ = {
 			isa = PBXGroup;
 			children = (
@@ -740,6 +840,10 @@
 				945AF7D125D272690082871D /* ResourceHubVC.swift */,
 				945AF7F525D2B5510082871D /* ReceptionSignVC.swift */,
 				94367F1825D31BB7006C80F4 /* SocialMediaContentVC.swift */,
+				941076D32712C88E00E3A96E /* SmileQuoteCell.swift */,
+				946DFC5826A44B0E00B47C6C /* LunchViewController.swift */,
+				944D3FA526A7341A00616EE5 /* InboundMarketingVC.swift */,
+				944D3FA726A7343A00616EE5 /* BrandBuildingVC.swift */,
 			);
 			path = ResourceHub;
 			sourceTree = "<group>";
@@ -771,6 +875,7 @@
 		945AF7FB25D2F9250082871D /* InboundMarketing */ = {
 			isa = PBXGroup;
 			children = (
+				944D3FA926A73BDC00616EE5 /* 25 SEO Tasks for Dental Websites.pdf */,
 				945AF7FC25D2F9500082871D /* 52 Blog Post Ideas.pdf */,
 			);
 			path = InboundMarketing;
@@ -779,7 +884,10 @@
 		945AF80225D2FC700082871D /* BrandBuilding */ = {
 			isa = PBXGroup;
 			children = (
+				944D3FAB26A73C0C00616EE5 /* Color Meanings for Dental Brands.pdf */,
 				945AF80325D2FCF40082871D /* 123 Dental Slogans.pdf */,
+				941076CF2711E1A400E3A96E /* Content To Film.pdf */,
+				941076D02711E1A600E3A96E /* Video Filming.pdf */,
 			);
 			path = BrandBuilding;
 			sourceTree = "<group>";
@@ -787,6 +895,18 @@
 		94B3089F25D3B4760013AD3A /* 12PackOfSmilequotes */ = {
 			isa = PBXGroup;
 			children = (
+				941076D7271307B000E3A96E /* QUOTE IMAGE 13.jpg */,
+				941076DA271307B400E3A96E /* QUOTE IMAGE 14.jpg */,
+				941076D9271307B200E3A96E /* QUOTE IMAGE 15.jpg */,
+				941076D8271307B100E3A96E /* QUOTE IMAGE 16.jpg */,
+				941076DB271307B500E3A96E /* QUOTE IMAGE 17.jpg */,
+				941076D5271307AD00E3A96E /* QUOTE IMAGE 18.jpg */,
+				941076DC271307B600E3A96E /* QUOTE IMAGE 19.jpg */,
+				941076DD271307B800E3A96E /* QUOTE IMAGE 20.jpg */,
+				941076DE271307B900E3A96E /* QUOTE IMAGE 21.jpg */,
+				941076DF271307BA00E3A96E /* QUOTE IMAGE 22.jpg */,
+				941076D6271307AE00E3A96E /* QUOTE IMAGE 23.jpg */,
+				941076E0271307BC00E3A96E /* QUOTE IMAGE 24.jpg */,
 				94B308A225D3BD2D0013AD3A /* QUOTE IMAGE 1.jpg */,
 				94B308BA25D3C9B00013AD3A /* QUOTE IMAGE 11.jpg */,
 				94B308B925D3C9AF0013AD3A /* QUOTE IMAGE 12.jpg */,
@@ -976,11 +1096,15 @@
 				6A26BC8D24EDC6640005F4BE /* DownloadedCell.xib in Resources */,
 				94B308B325D3BD310013AD3A /* QUOTE IMAGE 8.jpg in Resources */,
 				6A69787B24DC370D0021FA9E /* MontserratSemiBold.ttf in Resources */,
+				7705660427A5916D007C3CD8 /* screen-3.gif in Resources */,
 				6AF45BA424DACE4F00211F56 /* MontserratRegular.ttf in Resources */,
+				941076E7271307BC00E3A96E /* QUOTE IMAGE 17.jpg in Resources */,
 				945AF7E725D2B1560082871D /* DentalYear (Check-In Sign) V2.jpg in Resources */,
 				94367F1325D31B8F006C80F4 /* Oral Health Tips (Infographic) DY.pdf in Resources */,
 				94B308B425D3BD310013AD3A /* QUOTE IMAGE 10.jpg in Resources */,
+				941076E6271307BC00E3A96E /* QUOTE IMAGE 14.jpg in Resources */,
 				6A1CE44E24DECBD200B936EA /* HomeCellNew.xib in Resources */,
+				941076E3271307BC00E3A96E /* QUOTE IMAGE 13.jpg in Resources */,
 				6A17F51624DAC764002D8F8C /* LaunchScreen.storyboard in Resources */,
 				94B308BB25D3C9B00013AD3A /* QUOTE IMAGE 12.jpg in Resources */,
 				94B308AC25D3BD310013AD3A /* QUOTE IMAGE 1.jpg in Resources */,
@@ -988,34 +1112,52 @@
 				94B308AE25D3BD310013AD3A /* QUOTE IMAGE 4.jpg in Resources */,
 				6A17F51324DAC764002D8F8C /* Assets.xcassets in Resources */,
 				6A666B8F24E1336C007CDC29 /* CustomPopUp.xib in Resources */,
+				941076D12711E1A600E3A96E /* Content To Film.pdf in Resources */,
+				944D3FAC26A73C0C00616EE5 /* Color Meanings for Dental Brands.pdf in Resources */,
+				7705661427A92D75007C3CD8 /* screen-2_1.gif in Resources */,
 				94B308AB25D3BD310013AD3A /* QUOTE IMAGE 9.jpg in Resources */,
 				94B308B225D3BD310013AD3A /* QUOTE IMAGE 6.jpg in Resources */,
 				6A17F50E24DAC761002D8F8C /* Main.storyboard in Resources */,
 				6A26BC8724EDBB440005F4BE /* DownlaodProgressCell.xib in Resources */,
 				945AF7E825D2B1560082871D /* DentalYear (Check-In Sign) V3.jpg in Resources */,
+				941076E4271307BC00E3A96E /* QUOTE IMAGE 16.jpg in Resources */,
 				94B308AF25D3BD310013AD3A /* QUOTE IMAGE 3.jpg in Resources */,
 				94B308B025D3BD310013AD3A /* QUOTE IMAGE 2.jpg in Resources */,
+				77C3EAE927987C06008E8D9D /* Onboading.storyboard in Resources */,
+				941076E9271307BC00E3A96E /* QUOTE IMAGE 20.jpg in Resources */,
 				6AB188E624F03950000B2E5C /* SubscriptionCell.xib in Resources */,
 				945AF7FD25D2F9510082871D /* 52 Blog Post Ideas.pdf in Resources */,
 				94B308B125D3BD310013AD3A /* QUOTE IMAGE 7.jpg in Resources */,
+				7705661327A92D75007C3CD8 /* screen-3_1.gif in Resources */,
+				941076E1271307BC00E3A96E /* QUOTE IMAGE 18.jpg in Resources */,
+				941076EC271307BC00E3A96E /* QUOTE IMAGE 24.jpg in Resources */,
+				944D3FAA26A73BDC00616EE5 /* 25 SEO Tasks for Dental Websites.pdf in Resources */,
 				945AF7E325D2B1560082871D /* DentalYear (Check-In Sign) V1.jpg in Resources */,
 				6AD5BAE324E019C60019983D /* MontserratMedium.ttf in Resources */,
 				945AF7E625D2B1560082871D /* DentalYear (Check-In Sign) V2.pdf in Resources */,
 				6AB188F224F0511C000B2E5C /* SubscriptionDetails.xib in Resources */,
+				941076E2271307BC00E3A96E /* QUOTE IMAGE 23.jpg in Resources */,
 				6A96DD5C24E2DD22000090B4 /* WantHereCell.xib in Resources */,
+				941076EB271307BC00E3A96E /* QUOTE IMAGE 22.jpg in Resources */,
 				6A695BA124E2A3F7002FF1C3 /* SposorCell.xib in Resources */,
+				941076EA271307BC00E3A96E /* QUOTE IMAGE 21.jpg in Resources */,
 				6A96DD5624E2D16D000090B4 /* VideoCell.xib in Resources */,
 				6A69787924DC35CC0021FA9E /* MainHeaderView.xib in Resources */,
+				941076E5271307BC00E3A96E /* QUOTE IMAGE 15.jpg in Resources */,
+				941076E8271307BC00E3A96E /* QUOTE IMAGE 19.jpg in Resources */,
 				94367F1225D31B8F006C80F4 /* Oral Health Tips (Infographic) DY.jpg in Resources */,
 				94B308AD25D3BD310013AD3A /* QUOTE IMAGE 5.jpg in Resources */,
+				941076D22711E1A600E3A96E /* Video Filming.pdf in Resources */,
 				6A9A3E5324DE806E00DD09BD /* HomeCell.xib in Resources */,
 				6A69787D24DC37360021FA9E /* MontserratBold.ttf in Resources */,
 				945AF7E425D2B1560082871D /* DentalYear (Check-In Sign) V1.pdf in Resources */,
 				945AF80425D2FCF40082871D /* 123 Dental Slogans.pdf in Resources */,
+				7705660227A5916D007C3CD8 /* screen-1.gif in Resources */,
 				94B308BC25D3C9B00013AD3A /* QUOTE IMAGE 11.jpg in Resources */,
 				6A07F31E24E54BFB00E6A8B3 /* splashlogo.gif in Resources */,
 				6AB188EC24F03FB5000B2E5C /* SubscriptionListCell.xib in Resources */,
 				6A54724D24E1C6AF0062CD9F /* NoteCell.xib in Resources */,
+				7705660327A5916D007C3CD8 /* screen-2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1232,6 +1374,7 @@
 				6A96DD5024E2C44B000090B4 /* VideoViewController.swift in Sources */,
 				945AF7F625D2B5510082871D /* ReceptionSignVC.swift in Sources */,
 				6A96DD5B24E2DD22000090B4 /* WantHereCell.swift in Sources */,
+				7781581B27996963008E5B19 /* BaseOnboardingVC.swift in Sources */,
 				6A96DD6024E30A28000090B4 /* DVideoPlayer.swift in Sources */,
 				6A65342624EAFA9000BB5632 /* BMTimeSlider.swift in Sources */,
 				6A96DD5E24E2F356000090B4 /* VideoPlayerDelegate.swift in Sources */,
@@ -1242,33 +1385,41 @@
 				6AD5BAE124DFF14E0019983D /* SettingsViewController.swift in Sources */,
 				6ADCE17124E19ACD002B63E7 /* ContextManager.swift in Sources */,
 				6ADCE17724E19B21002B63E7 /* EventAPI.swift in Sources */,
+				778272E22799E0880004A767 /* ReviewCell.swift in Sources */,
 				94367F1925D31BB7006C80F4 /* SocialMediaContentVC.swift in Sources */,
 				6A9A3E4E24DE79C900DD09BD /* HomeStaticData.swift in Sources */,
 				6AB188EB24F03FB5000B2E5C /* SubscriptionListCell.swift in Sources */,
 				6A666B8E24E1336C007CDC29 /* CustomPopUp.swift in Sources */,
+				946DFC5926A44B0E00B47C6C /* LunchViewController.swift in Sources */,
 				6ADCE17324E19ADB002B63E7 /* DatastoreCoordinator.swift in Sources */,
 				6A69787F24DC39FB0021FA9E /* HomeTableDelegate.swift in Sources */,
 				6A695B9824E29EA9002FF1C3 /* SponsorObject.swift in Sources */,
 				6A26BC8C24EDC6640005F4BE /* DownloadedCell.swift in Sources */,
 				6A96DD5224E2C8E5000090B4 /* VideoObject.swift in Sources */,
 				6AB188F024F05108000B2E5C /* SubscriptionDetails.swift in Sources */,
+				778158172799621E008E5B19 /* SecondOnboardingVC.swift in Sources */,
 				6A695BA324E2A414002FF1C3 /* SponsorTableDelegate.swift in Sources */,
 				6A65342B24EAFA9000BB5632 /* BMPlayerItem.swift in Sources */,
 				6A695BA024E2A3F7002FF1C3 /* SposorCell.swift in Sources */,
 				6A9A3E5824DE8CA900DD09BD /* RoundCorners.swift in Sources */,
 				6A65342824EAFA9000BB5632 /* BMPlayerProtocols.swift in Sources */,
 				6A65342424EAFA9000BB5632 /* BMPlayer.swift in Sources */,
+				944D3FA826A7343A00616EE5 /* BrandBuildingVC.swift in Sources */,
 				6AA57E21252EFBE00053653F /* BMPlayerManager.swift in Sources */,
 				6A54725124E281E00062CD9F /* NotesDetailsViewController.swift in Sources */,
 				6AEF75BE24F0F8F800A89D85 /* SubscriptionManager.swift in Sources */,
 				6A666B8924E12762007CDC29 /* NotesViewController.swift in Sources */,
+				77815815279961EF008E5B19 /* FirstOnboardingVC.swift in Sources */,
 				6A26BC8324EDB8910005F4BE /* DownloadViewController.swift in Sources */,
 				6ADCE17524E19B1D002B63E7 /* Notes.swift in Sources */,
 				6ADCE17924E19B24002B63E7 /* EntityTypes.swift in Sources */,
+				941076D42712C88E00E3A96E /* SmileQuoteCell.swift in Sources */,
 				6A695BA524E2B067002FF1C3 /* SponsorsDetailsViewController.swift in Sources */,
+				944D3FA626A7341A00616EE5 /* InboundMarketingVC.swift in Sources */,
 				6AB188EE24F04772000B2E5C /* SubscriptionData.swift in Sources */,
 				94D8FF1025849AC700306676 /* FoodHolidayVC.swift in Sources */,
 				94D8FF182584E3D600306676 /* FoodHolidayCellTableViewCell.swift in Sources */,
+				7781581D27996B31008E5B19 /* PageVC.swift in Sources */,
 				6A54724F24E1CA2A0062CD9F /* NotesTableDelegate.swift in Sources */,
 				6A69788624DD59C60021FA9E /* APIHandler.swift in Sources */,
 				6ADCE16F24E19ABA002B63E7 /* PersistenceManager.swift in Sources */,
@@ -1283,6 +1434,7 @@
 				6A65342524EAFA9000BB5632 /* BMPlayerLayerView.swift in Sources */,
 				6A54724C24E1C6AF0062CD9F /* NoteCell.swift in Sources */,
 				6A9A3E5224DE806E00DD09BD /* HomeCell.swift in Sources */,
+				7781581927996243008E5B19 /* ThirdOnboardingVC.swift in Sources */,
 				6AF45BA824DAD43800211F56 /* DYTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1537,7 +1689,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = MCXZX4KQ43;
 				INFOPLIST_FILE = DentalYear/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1545,7 +1697,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.6.1;
+				MARKETING_VERSION = 2.6.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyear.dentalyear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1561,7 +1713,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 26;
+				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = MCXZX4KQ43;
 				INFOPLIST_FILE = DentalYear/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1569,7 +1721,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.6.1;
+				MARKETING_VERSION = 2.6.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dyear.dentalyear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -59,10 +59,10 @@ class SubscriptionCell: UICollectionViewCell {
         lblTitle.text = anitem.title
         if anitem.title == "MONTHLY PLAN"{
             if anitem.product != nil {
-                lblPrice.text = "First Month Free, then \(anitem.product?.localizedPrice ?? anitem.price)/month"
+                lblPrice.text = "First 7 Days Free, then \(anitem.product?.localizedPrice ?? anitem.price)/month"
             }else
             {
-                lblPrice.text = "First Month Free, then \(anitem.price)/month"
+                lblPrice.text = "First 7 Days Free, then \(anitem.price)/month"
             }
         }else if anitem.title == "ANNUAL PLAN"{
             if anitem.product != nil {
