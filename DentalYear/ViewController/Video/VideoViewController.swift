@@ -142,18 +142,19 @@ class VideoViewController: UIViewController {
         
     }
     func downloadFor(video:VideoObject)  {
-        if videoCatType == .premium{
-            if let purchasedId = video.acf.purchaseId{
-                if UserDefaults.standard.bool(forKey: purchasedId){
-                    print("Video is already purchased.")
-                    self.navigateToDownloadViewController(video: video)
-                }else{
-                    productInfo(productId: purchasedId)
-                }
-            }
-        }else{
-            navigateToDownloadViewController(video: video)
-        }
+        navigateToDownloadViewController(video: video)
+//        if videoCatType == .premium{
+//            if let purchasedId = video.acf.purchaseId{
+//                if UserDefaults.standard.bool(forKey: purchasedId){
+//                    print("Video is already purchased.")
+//                    self.navigateToDownloadViewController(video: video)
+//                }else{
+//                    productInfo(productId: purchasedId)
+//                }
+//            }
+//        }else{
+//            navigateToDownloadViewController(video: video)
+//        }
     }
     
     private  func navigateToDownloadViewController(video : VideoObject){
@@ -557,7 +558,7 @@ extension VideoViewController : BMPlayerDelegate{
                         print("Video is already purchased.")
                     }else{
                         player.pause()
-                        productInfo(productId: purchasedId)
+//                        productInfo(productId: purchasedId)
                     }
                 }
             }
