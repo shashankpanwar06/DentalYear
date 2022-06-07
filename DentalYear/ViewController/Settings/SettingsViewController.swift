@@ -28,11 +28,8 @@ class SettingsViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.tabBarController?.tabBar.isHidden = true
         configureView()
-
-        
-
-        // Do any additional setup after loading the view.
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
@@ -41,6 +38,11 @@ class SettingsViewController: UIViewController {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.tabBarController?.tabBar.isHidden = false
+    }
+    @IBAction func privacyTapped(_ sender: UITapGestureRecognizer) {
+        if let url = URL(string: "https://dentalyear.com/privacy/"){
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func onBtnRestore(_ sender: Any) {
@@ -71,6 +73,10 @@ class SettingsViewController: UIViewController {
         if let myWebsite = URL(string: "http://dentalyear.com") {//Enter link to your app here
             let objectsToShare = [textToShare, myWebsite] as [Any]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            if (activityVC.popoverPresentationController != nil){
+                activityVC.popoverPresentationController?.sourceView = self.view
+                activityVC.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY,width: 0,height: 0)
+            }
             self.present(activityVC, animated: true, completion: nil)
         }
     }
