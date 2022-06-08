@@ -219,6 +219,10 @@ class HomeCell: UITableViewCell {
     @IBAction func shareBtnPressed(_ sender: UIButton) {
         let objectsToShare = [lblDetails.text!] as [Any]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+        if (activityVC.popoverPresentationController != nil){
+            activityVC.popoverPresentationController?.sourceView = self.superview
+            activityVC.popoverPresentationController?.sourceRect = CGRect(x: self.superview?.frame.midX ?? 0, y: self.superview?.frame.midY ?? 0,width: 0,height: 0)
+        }
         self.findViewController()?.present(activityVC, animated: true, completion: nil)
     }
     

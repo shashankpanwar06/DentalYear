@@ -31,7 +31,6 @@ class SubscriptionViewController: UIViewController {
         loadData()
         getInAppPurchaseProducts()
         subscriptionPlanSlected()
-        self.MoveTotabBar()
     }
 
     func subscriptionPlanSlected(){
